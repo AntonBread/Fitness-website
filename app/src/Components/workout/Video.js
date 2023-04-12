@@ -2,6 +2,8 @@ import React from "react"
 
 export default function Video(props) {
     return (
-        <iframe width="560" height="315" src={props.video} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <div className="workout-video-container">
+            <iframe width="1152" height="500" src={props.video} title="YouTube video player" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
+        </div>
     )
 }

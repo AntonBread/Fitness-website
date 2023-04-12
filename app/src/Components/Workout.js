@@ -2,19 +2,22 @@ import React from "react"
 import Video from "./workout/Video"
 import WorkoutInfo from "./workout/WorkoutInfo"
 import ExerciseInfo from "./workout/ExerciseInfo"
+import data from "./data"
 
 export default function Workout() {
     return (
         <div>
             <Video
-                video="https://www.youtube.com/embed/jhzzQd5hdCM"
+                video={data.video}
             />
             <WorkoutInfo
-                duration={330}
-                inventory="Не требуется"
-                area="Спина"
+                duration={data.duration}
+                inventory={data.inventory}
+                area={data.area}
             />
-            <ExerciseInfo />
+            <ExerciseInfo 
+                exercises={data.exercises}
+            />
         </div>
     )
 }

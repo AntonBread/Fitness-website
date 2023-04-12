@@ -2,13 +2,16 @@ import React from "react";
 
 export default function Exercise(props) {
     return (
-        <div className="workout-exercise">
-            <div className="workout-exercise-property">№{props.num}</div>
-            <div className="workout-exercise-property">{props.name}</div>
-            <div className="workout-exercise-property">{props.description}</div>
-            <div className="workout-exercise-property">{props.area}</div>
-            <div className="workout-exercise-property">{props.repCount}</div>
-            <div className="workout-exercise-property">{props.duration}</div>
+        <div className="workout-exercise-list-item">
+            <div>
+                <img className="workout-exercise-image" src={props.imageSrc} alt="altlol"></img>
+            </div>
+            <div className="workout-exercise-list-item-text">
+                <div className="workout-exercise-name">{props.name}</div>
+                <div>{props.area}</div>
+                <br />
+                <div>{props.repCount}</div>
+            </div>
         </div>
     )
 }

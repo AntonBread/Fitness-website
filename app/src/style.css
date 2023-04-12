@@ -1,10 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+.nav-wrapper {
+    display: flex;
+    position: relative;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100px;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 1px 5px #aaa;
 }
 
 nav {
+    min-width: 1152px;
+    max-width: 1152px;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
@@ -12,36 +28,82 @@ nav {
 }
 
 .nav-title {
-    font-size: 2rem;
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-decoration: none;
+    color: black;
 }
 
-.workout-info {
-    margin-top: 20px;
+.nav-link {
+    font-size: 1.5rem;
+    font-weight: 400;
+    text-decoration: none;
+    color: black;
 }
 
-.workout-info-data {
-    font-size: 1.2rem;
+.workout-video-container {
     display: flex;
-    gap: 10px;
+    background-color: #D7BFDC;
+    justify-content: center;
+    width: 100%;
+    max-height: 500px;
 }
 
-.workout-exercise-info {
-    margin-top: 20px;
-    width: 80%;
-    border: 1px solid black;
-}
-
-.workout-exercise {
+.workout-info-container {
     display: flex;
-    font-size: 1.2rem;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: #D7BFDC;
+    padding-top: 28px;
+    padding-bottom: 8px;
+    font-size: 1.25rem;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.05em;
 }
 
-.workout-exercise {
-    display: grid;
-    text-align: center;
-    grid-template-columns: 1.5fr 4fr 6fr 2.5fr 2.5fr 2fr;
+.workout-exercise-header {
+    margin-top: 40px;
+    margin-left: 100px;
+    font-size: 1.5rem;
+    font-weight: 700;
+    letter-spacing: 0.05em;
 }
 
-.workout-exercise-property {
-    border: 1px solid black;
+.workout-exercise-header-line-separator {
+    width: 370px;
+    height: 0px;
+    border: 4px solid #9966CB;
+}
+
+.workout-exercise-header-title {
+    margin-top: 24px;
+}
+
+.workout-exercise-list-container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    margin-left: 100px;
+}
+
+.workout-exercise-list-item {
+    display: flex;
+    margin-bottom: 64px;
+}
+
+.workout-exercise-name {
+    font-weight: 600;
+}
+
+.workout-exercise-image {
+    width: 290px;
+    height: 200px;
+    box-shadow: 1px 1px 5px #D7BFDC;
+}
+
+.workout-exercise-list-item-text {
+    margin-left: 80px;
+    margin-top: 40px;
 }
