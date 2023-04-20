@@ -1,14 +1,8 @@
 import React from "react";
+import { secondsToString } from "../../Scripts/converters";
 
 export default function WorkoutInfo(props) {
-    let durationMin = Math.floor(props.duration / 60).toString();
-    let durationSec = (props.duration % 60).toString();
-    
-    var duration = `${durationMin} мин.`;
-
-    if (durationSec !== "0") {
-        duration += ` ${durationSec} с.`;
-    }
+    const duration = secondsToString(props.duration)
     
     return (
         <div className="workout-info-container">
