@@ -1,10 +1,27 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0");
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Inter', sans-serif;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+a:active {
+    text-decoration: none;
 }
 
 .nav-wrapper {
@@ -106,4 +123,81 @@ nav {
 .workout-exercise-list-item-text {
     margin-left: 80px;
     margin-top: 40px;
+}
+
+.searchbar-container {
+    position: relative;
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 12px;
+}
+
+.searchbar-container i {
+    position: absolute;
+    padding: 10px;
+    padding-top: 12px;
+    right: 10px;
+    min-width: 40px;
+    transform: scale(1.5);
+}
+
+.input-field {
+    font-size: 1.5rem;
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+}
+
+.search-filter-container {
+    float: left;
+    width: 20%;
+    padding: 10px;
+    margin-top: 18px;
+    border: 1px solid black;
+}
+
+.catalog-title {
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.catalog-content-container {
+    margin-left: 30%;
+    padding-right: 48px;
+    margin-top: 18px;
+}
+
+.catalog-list-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    margin-bottom: 64px;
+    gap: 80px;
+}
+
+.catalog-card-container {
+    border: 1px solid #555;
+    border-radius: 10px;
+}
+
+.catalog-card-image {
+    width: 448px;
+    height: 280px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom: 1px solid black;
+}
+
+.catalog-card-description {
+    padding: 10px;
+    text-decoration: none;
+    color: black;
+    letter-spacing: 0.05em;
+    font-size: 1.25rem;
+}
+
+.catalog-card-description-text {
+    margin-top: 4px;
 }
