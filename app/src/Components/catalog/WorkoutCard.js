@@ -9,6 +9,8 @@ export default function WorkoutCard(props) {
             <a href={`/workout?id=${props.id}`}>
                 <img className="catalog-card-image" src={props.previewSrc} alt="no"></img>
                 <div className="catalog-card-description">
+                    <div className="catalog-card-description-text">{props.name}</div>
+                    <div className="catalog-card-description-text">{props.difficulty}</div>
                     <div className="catalog-card-description-text">{props.inventory}</div>
                     <div className="catalog-card-description-text">{props.area}</div>
                     <div className="catalog-card-description-text">{duration}</div>
