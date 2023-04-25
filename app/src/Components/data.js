@@ -1,12 +1,16 @@
 // PLACEHOLDER WORKOUT DATA FILE
 
+import { WorkoutInventory, WorkoutArea, WorkoutDifficulty } from "../Scripts/workoutFilterData"
+
 const workoutdata = [{
     id: 1,
+    name: "Тренировка 1",
     previewImageSrc: "https://cross.expert/wp-content/uploads/2017/01/uprazhneniya-dlya-pressa-v-domashnih-usloviyah-podnyatie-nogi.jpeg",
     video: "https://www.youtube.com/embed/TDvNBQ7ysUo",
     duration: 420,
-    inventory: "Снаряжение не требуется",
-    area: "Пресс и корпус",
+    inventory: WorkoutInventory.NONE,
+    area: WorkoutArea.CORE,
+    difficulty: WorkoutDifficulty.BEGINNER,
     exercises: [
         {
             imageSrc: "https://cross.expert/wp-content/uploads/2017/01/uprazhneniya-dlya-pressa-v-domashnih-usloviyah-podnyatie-nogi.jpeg",
@@ -39,11 +43,13 @@ const workoutdata = [{
 },
 {
     id: 2,
+    name: "Зарядка 1",
     previewImageSrc: "https://media.istockphoto.com/id/1132086660/photo/side-view-of-beautiful-muscular-woman-running-on-treadmill.jpg?s=612x612&w=0&k=20&c=5Vq_BJjG7sbIyKIP-Adu0pChReDXm0dC7BVPvto2M0I=",
     video: "https://www.youtube.com/embed/TDvNBQ7ysUo",
     duration: 600,
-    inventory: "Снаряжение не требуется",
-    area: "Пресс и корпус",
+    inventory: WorkoutInventory.NONE,
+    area: WorkoutArea.CORE,
+    difficulty: WorkoutDifficulty.BEGINNER,
     exercises: [
         {
             imageSrc: "https://media.istockphoto.com/id/1132086660/photo/side-view-of-beautiful-muscular-woman-running-on-treadmill.jpg?s=612x612&w=0&k=20&c=5Vq_BJjG7sbIyKIP-Adu0pChReDXm0dC7BVPvto2M0I=",
@@ -69,11 +75,13 @@ const workoutdata = [{
 },
 {
     id: 3,
+    name: "Тренировка 2",
     previewImageSrc: "https://st.focusedcollection.com/14026668/i/650/focused_268295064-stock-photo-man-doing-barbell-exercise-gym.jpg",
     video: "https://www.youtube.com/embed/TDvNBQ7ysUo",
     duration: 450,
-    inventory: "Штанга, гантели",
-    area: "Пресс и корпус",
+    inventory: WorkoutInventory.GYM,
+    area: WorkoutArea.ARMS,
+    difficulty: WorkoutDifficulty.INTERMEDIATE,
     exercises: [
         {
             imageSrc: "https://st.focusedcollection.com/14026668/i/650/focused_268295064-stock-photo-man-doing-barbell-exercise-gym.jpg",
@@ -106,11 +114,13 @@ const workoutdata = [{
 },
 {
     id: 4,
+    name: "Воркаут 1",
     previewImageSrc: "https://media.istockphoto.com/id/1134840987/photo/woman-practicing-yoga-glute-bridge-exercise-dvi-pada-pithasana-pose.jpg?s=612x612&w=0&k=20&c=-gi08sIqYzbjoWDQ4j9VtxN9JKD6e_ZSAHs0k7XyEM0=",
     video: "https://www.youtube.com/embed/TDvNBQ7ysUo",
     duration: 900,
-    inventory: "Снаряжение не требуется",
-    area: "Пресс и корпус",
+    inventory: WorkoutInventory.NONE,
+    area: WorkoutArea.LEGS,
+    difficulty: WorkoutDifficulty.ADVANCED,
     exercises: [
         {
             imageSrc: "https://media.istockphoto.com/id/1134840987/photo/woman-practicing-yoga-glute-bridge-exercise-dvi-pada-pithasana-pose.jpg?s=612x612&w=0&k=20&c=-gi08sIqYzbjoWDQ4j9VtxN9JKD6e_ZSAHs0k7XyEM0=",
@@ -143,11 +153,13 @@ const workoutdata = [{
 },
 {
     id: 5,
+    name: "Треня 1",
     previewImageSrc: "https://media.istockphoto.com/id/1178523902/photo/young-woman-doing-bicycle-crunch-exercise-pink-background-panorama.jpg?s=612x612&w=0&k=20&c=3XZZMYbaF7HQ1Je49XWHwwoXlR_KHQUJ8od_YQIQrwc=",
     video: "https://www.youtube.com/embed/TDvNBQ7ysUo",
     duration: 360,
-    inventory: "Снаряжение не требуется",
-    area: "Пресс и корпус",
+    inventory: WorkoutInventory.BASIC,
+    area: WorkoutArea.CORE,
+    difficulty: WorkoutDifficulty.BEGINNER,
     exercises: [
         {
             imageSrc: "https://media.istockphoto.com/id/1178523902/photo/young-woman-doing-bicycle-crunch-exercise-pink-background-panorama.jpg?s=612x612&w=0&k=20&c=3XZZMYbaF7HQ1Je49XWHwwoXlR_KHQUJ8od_YQIQrwc=",
