@@ -5,10 +5,6 @@ import * as workoutFilterData from "../../Scripts/workoutFilterData";
 
 export default function CatalogContent(props) {
     const workouts = props.data.map(workout => {
-        const inventoryName = workoutFilterData.getInventoryName(workout.inventory)
-        const areaName = workoutFilterData.getAreaName(workout.area)
-        const difficultyName = workoutFilterData.getDifficultyName(workout.difficulty)
-
         // Рендерим только тренировки подходящие под запрос поисковой строки
         if (!(matchesSearchQuery(props.searchQuery, workout.name))) {
             return null
@@ -25,9 +21,7 @@ export default function CatalogContent(props) {
                 name={workout.name}
                 previewSrc={workout.previewImageSrc}
                 duration={workout.duration}
-                inventory={inventoryName}
-                area={areaName}
-                difficulty={difficultyName}
+                difficulty={workout.difficulty}
             />
         )
     })

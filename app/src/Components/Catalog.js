@@ -25,19 +25,8 @@ export default function Catalog() {
     )
     // Фиксируем состояние в компоненте SearchFilters
     function handleFilterChange(event) {
-        const { name, value, type, id } = event.target
-        // Фильтрация по длительности тренировки осуществляется
-        // установлением флажков, соответствующих определенному интервалу времени
-        // Например:
-        // 1 флажок отвечает за тренировки длительностью 1-10 минут
-        // 2 флажок отвечает за тренировки длительностью 11-20 минут
-        // Если чекнуть 1 и 2 флажки, то будут отображаться тренировки длительностью 1-20 минут
-        if (type === "checkbox") {
-            updateFilterStateDuration(setFilterData, id, name)
-        }
-        else {
-            updateFilterStateGeneral(setFilterData, name, value)
-        }
+        const { name, id } = event.target
+        updateFilterState(setFilterData, id, name)
     }
 
     return (
@@ -59,20 +48,11 @@ export default function Catalog() {
     )
 }
 
-function updateFilterStateDuration(callback, index, name) {
+function updateFilterState(callback, index, name) {
     callback(prevFilterData => {
         return {
             ...prevFilterData,
             [name]: updateThresholdSelectionArray(prevFilterData[name], index),
-        }
-    })
-}
-
-function updateFilterStateGeneral(callback, name, value) {
-    callback(prevFilterData => {
-        return {
-            ...prevFilterData,
-            [name]: value
         }
     })
 }
