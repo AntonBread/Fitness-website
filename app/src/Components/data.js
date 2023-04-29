@@ -193,3 +193,26 @@ const workoutdata = [{
 ]
 
 export default workoutdata
+
+export const recommendedLinks = [{
+    id: 1,
+    href: "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+    name: "Практика на самые глубокие мыщцы кора",
+    description: "Лорел Пру, физиотерапевт, доктор медицинских наук",
+    previewImageSrc: "https://www.oum.ru/upload/iblock/0ad/0adb02d72324cc3c1f7f80ba03db4db5.jpg"
+},
+{
+    id: 2,
+    href: "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+    name: "Паста с кудрявой капустой",
+    description: "30 мин.",
+    previewImageSrc: "https://img.inmyroom.ru/inmyroom/thumb/620x398/jpg:85/uploads/food_recipe/teaser/c1/c142/jpg_1000_c1428513-6167-43c1-abac-f19e60a73b90.jpg?sign=ebc8d7d4f48b089b8c9160c192ded67acdd5903114b0b6f138733a00a9d1e906"
+},
+{
+    id: 3,
+    href: "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+    name: "Найди свой оптимальный вариант восстановления",
+    description: "Советы",
+    previewImageSrc: "https://img.championat.com/c/1200x900/news/big/r/l/chto-takoe-vosstanovitelnye-trenirovki_1601474901346592870.jpg"
+}
+]

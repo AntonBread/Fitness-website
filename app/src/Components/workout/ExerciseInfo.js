@@ -15,7 +15,7 @@ export default function ExerciseInfo(props) {
         )
     })
     return (
-        <div>
+        <div className="workout-exercise-info-container">
             <ExerciseListHeader />
             <div className="workout-exercise-list-container">
                 {exercises}
