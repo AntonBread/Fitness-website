@@ -31,8 +31,8 @@ export default function WorkoutSlider(props) {
 
     const showLeftArrow = (sliderOffset > 0)
     const showRightArrow = (sliderOffset < (sliderLength - 3))
-    const style = {
-        transform: `translateX(-${sliderOffset * 329}px)`
+    const sliderOffsetStyle = {
+        transform: `translateX(-${sliderOffset * 328}px)`
     }
 
     return (
@@ -40,7 +40,7 @@ export default function WorkoutSlider(props) {
             {showLeftArrow && <SliderArrowLeft
                 className="personal-workouts-slider-button personal-workouts-slider-button-left"
                 onClick={slideLeft} />}
-            <div className="personal-workouts-slider" style={style}>
+            <div className="personal-workouts-slider" style={sliderOffsetStyle}>
                 {workouts}
             </div>
             {showRightArrow && <SliderArrowRight

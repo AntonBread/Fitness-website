@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Catalog</title>
+    <link rel="stylesheet" href="./css/catalog.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet" href="./css/catalog.css"
+    />
+  </head>
+  </head>
+  <body>
+    <header>
+      <div class="header__container">
+        <h1 class="header__title">fitness-website</h1>
+
+        <ul class="header__nav">
+          <li class="header__nav_item">
+            <a href="#" class="header__nav_link">главная</a>
+          </li>
+          <li class="header__nav_item">
+            <a href="#" class="header__nav_link">каталог</a>
+          </li>
+          <li class="header__nav_item">
+            <a href="#" class="header__nav_link">данные</a>
+          </li>
+        </ul>
+
+        <div class="header__profile">
+          <img
+            src="images/login_.png"
+            alt=""
+            class="header__profile_icon"
+          />
+          <a href="#" class="header__profile_link">выход</a>
+        </div>
+      </div>
+    </header>
+
+    <section class="catalog">
+        <div class="catalog__container">
+            <div class="catalog__search">
+                <input placeholder="Поиск по тренировкам" type="text" class="catalog__search_input">
+                <img src="images/search.png" alt="Search" class="catalog__search_img">
+            </div>
+
+            <div class="line"></div>
+
+            <h2 class="catalog__title">Тренировки</h2>
+
+            <div class="catalog__trening">
+                <ul class="catalog__trening_list">
+                    <li class="catalog__trening_item">
+                        <div class="catalog__trening_text">
+                            <h3 class="catalog__trening_title">Снаряжение</h3>
+                        </div>
+
+                        <div class="catalog__trening_check">
+                            <div class="catalog__trening_sort">
+                                <input type="checkbox" class="catalog__trening_input">
+                                <h3 class="catalog__trening_about">Базовое снаряжение</h3>
+                            </div>
+                            <div class="catalog__trening_sort">
+                                <input type="checkbox" class="catalog__trening_input">
+                                <h3 class="catalog__trening_about">Все снаряжение зала</h3>
+                            </div>
+                            <div class="catalog__trening_sort">
+                                <input type="checkbox" class="catalog__trening_input">
+                                <h3 class="catalog__trening_about">Без снаряжение</h3>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="catalog__trening_item">
+                        <div class="catalog__trening_text">
+                            <h3 class="catalog__trening_title">Группа мышц</h3>
+                        </div>
+
+                        <div class="catalog__trening_check">
+                            <div class="catalog__trening_sort">
+                                <input type="checkbox" class="catalog__trening_input">
+                                <h3 class="catalog__trening_about">Пресс и корпус</h3>
+                            </div>
+                            <div class="catalog__trening_sort">
+                                <input type="checkbox" class="catalog__trening_input">
+                                <h3 class="catalog__trening_about">Руки и плечи</h3>
+                            </div>
+                            <div class="catalog__trening_sort">
+                                <input type="checkbox" class="catalog__trening_input">
+                                <h3 class="catalog__trening_about">Ягодицы и ноги</h3>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="catalog__trening_item">
+                        <div class="catalog__trening_text">
+                            <h3 class="catalog__trening_title">Уровень сложности</h3>
+                        </div>
+
+                        <div class="catalog__trening_check">
+                            <div class="catalog__trening_sort">
+                                <input type="checkbox" class="catalog__trening_input">
+                                <h3 class="catalog__trening_about">Начинающий</h3>
+                            </div>
+                            <div class="catalog__trening_sort">
+                                <input type="checkbox" class="catalog__trening_input">
+                                <h3 class="catalog__trening_about">Средний</h3>
+                            </div>
+                            <div class="catalog__trening_sort">
+                                <input type="checkbox" class="catalog__trening_input">
+                                <h3 class="catalog__trening_about">Продвинутый</h3>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="catalog__trening_item">
+                        <div class="catalog__trening_text">
+                            <h3 class="catalog__trening_title">Время</h3>
+                        </div>
+
+                        <div class="catalog__trening_check">
+                            <div class="catalog__trening_sort">
+                                <input type="checkbox" class="catalog__trening_input">
+                                <h3 class="catalog__trening_about">5-15 мин.</h3>
+                            </div>
+                            <div class="catalog__trening_sort">
+                                <input type="checkbox" class="catalog__trening_input">
+                                <h3 class="catalog__trening_about">16-25 мин.</h3>
+                            </div>
+                            <div class="catalog__trening_sort">
+                                <input type="checkbox" class="catalog__trening_input">
+                                <h3 class="catalog__trening_about">26-40 мин.</h3>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+
+                <ul class="catalog__trening_content">
+                    <li class="catalog__content_item">
+                        <div class="catalog__content_img"></div>
+
+                        <p class="catalog__content_about">10 минут ВИТ: третья<br>тренировка ВИТ</p>
+
+                        <p class="catalog__content_time">11 мин. - Начинающий</p>
+                    </li>
+                    <li class="catalog__content_item">
+                        <div class="catalog__content_img"></div>
+
+                        <p class="catalog__content_about">5 мин. йоги для бегунов:<br>растяжка для разогрева</p>
+
+                        <p class="catalog__content_time">6 мин. - Начинающий</p>
+                    </li>
+                    <li class="catalog__content_item">
+                        <div class="catalog__content_img"></div>
+
+                        <p class="catalog__content_about">Проработка ягодиц</p>
+
+                        <p class="catalog__content_time">15 мин. - Продвинутый</p>
+                    </li>
+                    <li class="catalog__content_item">
+                        <div class="catalog__content_img"></div>
+
+                        <p class="catalog__content_about">Идеальное равновесие</p>
+
+                        <p class="catalog__content_time">18 мин. - Средний</p>
+                    </li>
+                </ul>
+            </div>
+
+            <ul class="catalog__trening_links">
+                <li class="catalog__content_item">
+                    <div class="catalog__content_img"></div>
+
+                    <p class="catalog__content_about">Шагающая планка</p>
+
+                    <p class="catalog__content_time">30 мин. - Продвинутый</p>
+                </li>
+                <li class="catalog__content_item">
+                    <div class="catalog__content_img"></div>
+
+                    <p class="catalog__content_about">Корпус и руки</p>
+
+                    <p class="catalog__content_time">15 мин. - Средний</p>
+                </li>
+                <li class="catalog__content_item">
+                    <div class="catalog__content_img"></div>
+
+                    <p class="catalog__content_about">От нуля до ста</p>
+
+                    <p class="catalog__content_time">30 мин. - Продвинутый</p>
+                </li>
+            </ul>
+        </div>
+    </section>
+  </body>
+</html>

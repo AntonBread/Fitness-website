@@ -29,13 +29,10 @@ export default function CatalogContent(props) {
     const isSearchResultEmpty = workouts.every((item) => item == null)
 
     return (
-        <div className="catalog-content-container">
-            <h2 className="catalog-title">Тренировки</h2>
-            <div className="catalog-list-container">
-                {workouts}
-                {/* Если результаты поиска и фильтра нулевые, надо отобразить соответствующее сообщение */}
-                {isSearchResultEmpty && <div className="catalog-content-message-no-result">Ничего не найдено</div>}
-            </div>
+        <div className="catalog-list-container">
+            {workouts}
+            {/* Если результаты поиска и фильтра нулевые, надо отобразить соответствующее сообщение */}
+            {isSearchResultEmpty && <div className="catalog-content-message-no-result">Ничего не найдено</div>}
         </div>
     )
 }

@@ -190,6 +190,107 @@ const workoutdata = [{
         }
     ]
 },
+{
+    id: 6,
+    name: "10 минут ВИТ: третья тренировка ВИТ",
+    previewImageSrc: "https://media.istockphoto.com/id/1288737452/photo/you-are-strong-strong-is-you.jpg?s=612x612&w=0&k=20&c=KBa7d-_SK2NOPIi8U82atJykQBCuzqjVFXF_2ydHdUQ=",
+    video: "https://www.youtube.com/embed/TDvNBQ7ysUo",
+    duration: 660,
+    inventory: WorkoutInventory.GYM,
+    area: WorkoutArea.ARMS,
+    difficulty: WorkoutDifficulty.BEGINNER,
+    exercises: [
+        {
+            imageSrc: "https://media.istockphoto.com/id/1288737452/photo/you-are-strong-strong-is-you.jpg?s=612x612&w=0&k=20&c=KBa7d-_SK2NOPIi8U82atJykQBCuzqjVFXF_2ydHdUQ=",
+            name: "Скручивания с подъёмом колен",
+            area: "Прямая мышца",
+            repCount: "3x15 раз",
+        },
+
+        {
+            imageSrc: "https://media.istockphoto.com/id/1288737452/photo/you-are-strong-strong-is-you.jpg?s=612x612&w=0&k=20&c=KBa7d-_SK2NOPIi8U82atJykQBCuzqjVFXF_2ydHdUQ=",
+            name: "Скрёстные касания прямых ног",
+            area: "Косые, межрёберные и зубчатые мыщцы",
+            repCount: "3x15 раз",
+        },
+
+        {
+            imageSrc: "https://media.istockphoto.com/id/1288737452/photo/you-are-strong-strong-is-you.jpg?s=612x612&w=0&k=20&c=KBa7d-_SK2NOPIi8U82atJykQBCuzqjVFXF_2ydHdUQ=",
+            name: "Перекаты на полу",
+            area: "Прямая и поперечная мышщы живота, косые пучки",
+            repCount: "3x15 раз",
+        },
+
+        {
+            imageSrc: "https://media.istockphoto.com/id/1288737452/photo/you-are-strong-strong-is-you.jpg?s=612x612&w=0&k=20&c=KBa7d-_SK2NOPIi8U82atJykQBCuzqjVFXF_2ydHdUQ=",
+            name: "Велосипед с поднятым корпусом",
+            area: "Прямая, внутренняя и наружная косая мыщцы",
+            repCount: "3x15 раз",
+        }
+    ]
+},
+{
+    id: 7,
+    name: "5 мин. йоги для бегунов: растяжка для разогрева",
+    previewImageSrc: "https://marathonec.ru/wp-content/uploads/2021/05/anjaneyasana.jpg",
+    video: "https://www.youtube.com/embed/TDvNBQ7ysUo",
+    duration: 360,
+    inventory: WorkoutInventory.NONE,
+    area: WorkoutArea.CORE,
+    difficulty: WorkoutDifficulty.BEGINNER,
+    exercises: [
+        {
+            imageSrc: "https://marathonec.ru/wp-content/uploads/2021/05/anjaneyasana.jpg",
+            name: "Скручивания с подъёмом колен",
+            area: "Прямая мышца",
+            repCount: "3x15 раз",
+        },
+
+        {
+            imageSrc: "https://marathonec.ru/wp-content/uploads/2021/05/anjaneyasana.jpg",
+            name: "Скрёстные касания прямых ног",
+            area: "Косые, межрёберные и зубчатые мыщцы",
+            repCount: "3x15 раз",
+        },
+
+        {
+            imageSrc: "https://marathonec.ru/wp-content/uploads/2021/05/anjaneyasana.jpg",
+            name: "Перекаты на полу",
+            area: "Прямая и поперечная мышщы живота, косые пучки",
+            repCount: "3x15 раз",
+        },
+
+        {
+            imageSrc: "https://marathonec.ru/wp-content/uploads/2021/05/anjaneyasana.jpg",
+            name: "Велосипед с поднятым корпусом",
+            area: "Прямая, внутренняя и наружная косая мыщцы",
+            repCount: "3x15 раз",
+        }
+    ]
+},
 ]
 
 export default workoutdata
+
+export const recommendedLinks = [{
+    id: 1,
+    href: "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+    name: "Практика на самые глубокие мыщцы кора",
+    description: "Лорел Пру, физиотерапевт, доктор медицинских наук",
+    previewImageSrc: "https://www.oum.ru/upload/iblock/0ad/0adb02d72324cc3c1f7f80ba03db4db5.jpg"
+},
+{
+    id: 2,
+    href: "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+    name: "Паста с кудрявой капустой",
+    description: "30 мин.",
+    previewImageSrc: "https://img.inmyroom.ru/inmyroom/thumb/620x398/jpg:85/uploads/food_recipe/teaser/c1/c142/jpg_1000_c1428513-6167-43c1-abac-f19e60a73b90.jpg?sign=ebc8d7d4f48b089b8c9160c192ded67acdd5903114b0b6f138733a00a9d1e906"
+},
+{
+    id: 3,
+    href: "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+    name: "Найди свой оптимальный вариант восстановления",
+    description: "Советы",
+    previewImageSrc: "https://img.championat.com/c/1200x900/news/big/r/l/chto-takoe-vosstanovitelnye-trenirovki_1601474901346592870.jpg"
+}
+]

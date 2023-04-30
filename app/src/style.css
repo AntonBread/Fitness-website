@@ -11,7 +11,7 @@
 *,
 *::before,
 *::after {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 
@@ -66,12 +66,19 @@ nav {
     max-height: 500px;
 }
 
+.workout-info-wallpaper {
+    width: 100%;
+    background-color: #D7BFDC;
+}
+
 .workout-info-container {
     display: flex;
-    justify-content: space-evenly;
+    max-width: 1152px;
+    justify-content: space-between;
     flex-wrap: wrap;
     align-items: center;
-    background-color: #D7BFDC;
+    margin: 0 auto;
+    padding: 0 104px;
     padding-top: 28px;
     padding-bottom: 8px;
     font-size: 1.25rem;
@@ -80,34 +87,39 @@ nav {
     letter-spacing: 0.05em;
 }
 
+.workout-exercise-info-container {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    max-width: 1152px;
+    padding: 0 104px;
+    padding-bottom: 66px;
+}
+
 .workout-exercise-header {
-    margin-top: 40px;
-    margin-left: 100px;
+    margin-top: 36px;
     font-size: 1.5rem;
     font-weight: 700;
+    line-height: 29px;
+    text-align: left;
+    color: black;
     letter-spacing: 0.05em;
 }
 
-.workout-exercise-header-line-separator {
-    width: 370px;
-    height: 0px;
-    border: 4px solid #9966CB;
-}
-
 .workout-exercise-header-title {
-    margin-top: 24px;
+    margin-top: 26px;
 }
 
 .workout-exercise-list-container {
     display: flex;
     flex-direction: column;
     margin-top: 50px;
-    margin-left: 100px;
+    row-gap: 64px;
 }
 
 .workout-exercise-list-item {
     display: flex;
-    margin-bottom: 64px;
+    align-items: center;
 }
 
 .workout-exercise-name {
@@ -118,71 +130,112 @@ nav {
     width: 290px;
     height: 200px;
     box-shadow: 1px 1px 5px #D7BFDC;
+    background: #D7BFDC;
 }
 
 .workout-exercise-list-item-text {
-    margin-left: 80px;
-    margin-top: 40px;
+    margin-left: 82px;
+    font-size: 1.25rem;
+    line-height: 25px;
 }
 
 .searchbar-container {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 54px;
     position: relative;
-    width: 40%;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 12px;
 }
 
 .searchbar-container i {
     position: absolute;
     padding: 10px;
-    padding-top: 12px;
-    right: 10px;
+    right: 170px;
     min-width: 40px;
     transform: scale(1.5);
 }
 
-.input-field {
-    font-size: 1.5rem;
-    width: 100%;
-    padding: 10px;
-    text-align: center;
+.searchbar-input-field {
+    width: 618px;
+    height: 50px;
+    background: #d9d9d9;
+    border-radius: 30px;
+    border: none;
+    outline: none;
+    padding-left: 18px;
+    font-weight: 400;
+    font-size: 1.25rem;
+    line-height: 24px;
+    color: rgba(0, 0, 0, 0.5);
 }
 
-.catalog-title {
-    font-size: 2rem;
-    font-weight: 600;
+.catalog-wallpaper {
+    width: 100%;
+    background: #d7bfdc;
+    overflow: hidden;
+}
+
+.catalog-title-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.catalog-title-text {
+    font-weight: 700;
+    font-size: 1.5rem;
+    line-height: 29px;
+    text-align: center;
+    letter-spacing: 0.05em;
+    color: black;
+    margin-bottom: 34px;
+}
+
+.catalog-workouts {
+    display: flex;
+    column-gap: 40px;
+    width: 100%;
 }
 
 .catalog-content-container {
-    margin-left: 30%;
-    padding-right: 48px;
-    margin-top: 18px;
+    max-width: 1152px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    padding: 0 104px;
+    height: 100%;
+    padding-top: 54px;
+    padding-bottom: 80px;
 }
 
 .catalog-list-container {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    margin-top: 20px;
-    margin-bottom: 64px;
-    gap: 80px;
+    gap: 40px;
 }
 
 .catalog-card-container {
     display: flex;
     flex-direction: column;
-    row-gap: 28px;
+    border: 2px solid #999;
+    border-radius: 30px;
     transition-duration: 500ms;
 }
 
 .catalog-card-image {
-    width: 290px;
+    width: 285px;
     height: 200px;
+    border-top-right-radius: 30px;
+    border-top-left-radius: 30px;
+    border-bottom: 1px solid #999;
     background: white;
 }
 
 .catalog-card-description {
+    overflow: hidden;
+    width: 285px;
+    padding: 10px;
     text-decoration: none;
     color: black;
     display: flex;
@@ -207,39 +260,104 @@ nav {
     margin-top: 80px;
     font-size: 2rem;
     font-weight: 400;
-    color: #999;
+    color: #777;
 }
 
 .catalog-filter-container {
-    float: left;
-    width: 20%;
-    padding: 10px;
-    margin-top: 18px;
-    border: 1px solid black;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 29px;
 }
 
-.catalog-filter-title {
-    font-size: 1.5rem;
-    margin-bottom: 8px;
+.catalog-filter-box-container {
+    background: white;
+    border-radius: 30px;
+    width: 285px;
+    display: flex;
+    flex-direction: column;
+    padding-left: 23px;
+    padding-top: 8px;
+    padding-bottom: 12px;
 }
 
-.catalog-filter-input-text {
-    width: 80%;
-    padding: 8px;
-    font-size: 1.25rem;
-    margin-top: 24px;
+.catalog-filter-box-title {
+    font-weight: 600;
+    font-size: 1.0rem;
+    line-height: 18px;
+    letter-spacing: 0.05em;
+    color: black;
+    margin-bottom: 10px;
 }
 
-.catalog-filter-duration-container {
-    display: grid;
-    grid-template-columns: 1fr;
-    row-gap: 10px;
-    font-size: 1.25rem;
+.catalog-filter-box-checks-wrapper {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
 }
 
-.catalog-filter-duration-container div {
-    display: grid;
-    grid-template-columns: 0.75fr 1.25fr;
+.catalog-filter-box-check-container {
+    display: flex;
+    height: 24px;
+    align-items: center;
+}
+
+.catalog-filter-box-check {
+    display: block;
+    position: relative;
+    padding-left: 36px;
+    cursor: pointer;
+    user-select: none;
+    font-weight: 400;
+    font-size: 1.0rem;
+    line-height: 18px;
+    letter-spacing: 0.05em;
+    color: black;
+}
+
+.catalog-filter-box-check input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+/* Custom checkbox for filters */
+.catalog-filter-box-check span {
+    position: absolute;
+    top: -3px;
+    left: 0;
+    height: 24px;
+    width: 24px;
+    border-radius: 5px;
+    background-color: #9966CB;
+}
+
+.catalog-filter-box-check:hover input~span {
+    background-color: #734d99;
+}
+
+.catalog-filter-box-check span:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.catalog-filter-box-check input:checked~span:after {
+    display: block;
+}
+
+.catalog-filter-box-check span:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid black;
+    border-width: 0 2px 2px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg) scale(1.5);
 }
 
 .line {
@@ -278,6 +396,7 @@ nav {
 
 .personal-workouts-slider-wrapper {
     overflow: hidden;
+    width: 945px;
 }
 
 .personal-workouts-slider {
@@ -307,4 +426,56 @@ nav {
 
 .personal-workouts-slider-button-right {
     right: 2.5%;
+}
+
+.personal-links-container {
+    max-width: 1152px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    padding: 0 104px;
+    padding-top: 54px;
+    padding-bottom: 50px;
+}
+
+.personal-links-title {
+    font-weight: 700;
+    font-size: 1.5rem;
+    line-height: 29px;
+    letter-spacing: 0.05em;
+    color: black;
+    margin-bottom: 62px;
+}
+
+.personal-links-list-container {
+    display: flex;
+    column-gap: 39px;
+}
+
+.personal-link-card-image {
+    width: 290px;
+    height: 200px;
+    background: #d7bfdc;
+    margin-bottom: 28px;
+    border: 1px solid #d7bfdc;
+}
+
+.personal-link-card-text {
+    display: flex;
+    flex-direction: column;
+    row-gap: 25px;
+    color: black;
+}
+
+.personal-link-card-title {
+    font-weight: 600;
+    font-size: 1.25rem;
+    line-height: 24px;
+    height: 48px;
+}
+
+.personal-link-card-about {
+    font-weight: 400;
+    font-size: 1.25rem;
+    line-height: 24px;
 }
