@@ -1,6 +1,7 @@
 import React from "react"
 import { useState } from "react"
 import SearchBar from "./catalog/SearchBar"
+import CatalogTitle from "./catalog/CatalogTitle"
 import SearchFilters from "./catalog/SearchFilters"
 import CatalogContent from "./catalog/CatalogContent"
 import { durationThresholds } from "./catalog/DurationFilterBox"
@@ -30,20 +31,25 @@ export default function Catalog() {
     }
 
     return (
-        <div>
-            <SearchBar
-                query={searchQuery}
-                handleQueryChange={handleSearchQueryChange}
-            />
-            <SearchFilters
-                filterData={filterData}
-                handleFilterChange={handleFilterChange}
-            />
-            <CatalogContent
-                data={data}
-                searchQuery={searchQuery}
-                filterData={filterData}
-            />
+        <div className="catalog-wallpaper">
+            <div className="catalog-content-container">
+                <SearchBar
+                    query={searchQuery}
+                    handleQueryChange={handleSearchQueryChange}
+                />
+                <CatalogTitle />
+                <div className="catalog-workouts">
+                    <SearchFilters
+                        filterData={filterData}
+                        handleFilterChange={handleFilterChange}
+                    />
+                    <CatalogContent
+                        data={data}
+                        searchQuery={searchQuery}
+                        filterData={filterData}
+                    />
+                </div>
+            </div>
         </div>
     )
 }

@@ -32,7 +32,7 @@ export default function WorkoutSlider(props) {
     const showLeftArrow = (sliderOffset > 0)
     const showRightArrow = (sliderOffset < (sliderLength - 3))
     const sliderOffsetStyle = {
-        transform: `translateX(-${sliderOffset * 329}px)`
+        transform: `translateX(-${sliderOffset * 328}px)`
     }
 
     return (

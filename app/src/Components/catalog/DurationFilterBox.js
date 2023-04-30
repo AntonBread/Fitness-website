@@ -20,21 +20,27 @@ export default function DurationFilter(props) {
         const labelText = getLabelText(threshold)
         return (
             <div
-                key={index}>
-                <input
-                    type="checkbox"
-                    id={index}
-                    name="durationThresholdsSelection"
-                    checked={props.selectionData[index]}
-                    onChange={props.handleFilterChange}>
-                </input>
-                <label>{labelText}</label>
+                key={index}
+                className="catalog-filter-box-check-container">
+                <label className="catalog-filter-box-check">{labelText}
+                    <input
+                        type="checkbox"
+                        id={index}
+                        name="durationThresholdsSelection"
+                        checked={props.selectionData[index]}
+                        onChange={props.handleFilterChange}>
+                    </input>
+                    <span></span>
+                </label>
             </div>
         )
     })
     return (
-        <div className="catalog-filter-duration-container">
-            {durationCheckboxes}
+        <div className="catalog-filter-box-container">
+            <div className="catalog-filter-box-title">Время</div>
+            <div className="catalog-filter-box-checks-wrapper">
+                {durationCheckboxes}
+            </div>
         </div>
     )
 }
