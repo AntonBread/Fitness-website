@@ -1,13 +1,14 @@
 import React from "react"
+import queryString from "query-string"
 import Video from "./workout/Video"
 import WorkoutInfo from "./workout/WorkoutInfo"
 import ExerciseInfo from "./workout/ExerciseInfo"
 import data from "./data"
 
-export default function Workout() {
-    const params = new Proxy(new URLSearchParams(window.location.search), {
-        get: (searchParams, prop) => searchParams.get(prop),
-    });
+export default function Workout(props) {
+    // Сплитим строку поиска по вопросу чтобы получить параметры
+    // Обычный window.location.search с хэш-роутером не работает
+    const params = queryString.parse(window.location.hash.split("?")[1])
 
     var workoutData
 

@@ -294,3 +294,14 @@ export const recommendedLinks = [{
     previewImageSrc: "https://img.championat.com/c/1200x900/news/big/r/l/chto-takoe-vosstanovitelnye-trenirovki_1601474901346592870.jpg"
 }
 ]
+
+export const homeImages = [
+    "https://avatars.dzeninfra.ru/get-zen_doc/1107063/pub_5d234d8ffe516300ade0caed_5d258e27cfcc8600ada5cb50/scale_1200",
+    "https://avatars.dzeninfra.ru/get-zen_doc/3765046/pub_5f34e4af3fcec9284b9e3f5e_5f34e6ad7f79eb09ffabd833/scale_1200",
+    "https://avatars.dzeninfra.ru/get-zen_doc/1107063/pub_5d234d8ffe516300ade0caed_5d258e27cfcc8600ada5cb50/scale_1200",
+    "https://avatars.dzeninfra.ru/get-zen_doc/3765046/pub_5f34e4af3fcec9284b9e3f5e_5f34e6ad7f79eb09ffabd833/scale_1200",
+    "https://avatars.dzeninfra.ru/get-zen_doc/1107063/pub_5d234d8ffe516300ade0caed_5d258e27cfcc8600ada5cb50/scale_1200",
+    "https://avatars.dzeninfra.ru/get-zen_doc/3765046/pub_5f34e4af3fcec9284b9e3f5e_5f34e6ad7f79eb09ffabd833/scale_1200",
+    "https://avatars.dzeninfra.ru/get-zen_doc/1107063/pub_5d234d8ffe516300ade0caed_5d258e27cfcc8600ada5cb50/scale_1200",
+    "https://avatars.dzeninfra.ru/get-zen_doc/3765046/pub_5f34e4af3fcec9284b9e3f5e_5f34e6ad7f79eb09ffabd833/scale_1200"
+]

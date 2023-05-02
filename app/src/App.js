@@ -5,15 +5,15 @@ import Workout from "./Components/Workout";
 import Catalog from "./Components/Catalog";
 import Stats from "./Components/Stats";
 import Personal from "./Components/Personal";
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { HashRouter as Router, Routes, Route } from 'react-router-dom';
 
 export default function App() {
     return (
-        <Router>
+        <Router basename={process.env.PUBLIC_URL}>
             <div className="App">
                 <Navbar />
                 <Routes>
-                    <Route path="/" element={<Home />} />
+                    <Route exact path="/" element={<Home />} />
                     <Route path="/workout" element={<Workout />} />
                     <Route path="/catalog" element={<Catalog />} />
                     <Route path="/stats" element={<Stats />} />
