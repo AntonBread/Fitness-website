@@ -2,6 +2,8 @@
 
 import { WorkoutInventory, WorkoutArea, WorkoutDifficulty } from "../Scripts/workoutFilterData"
 
+export const APIBase = "https://70ab-5-189-202-251.in.ngrok.io/"
+
 const workoutdata = [{
     id: 1,
     name: "Тренировка 1",

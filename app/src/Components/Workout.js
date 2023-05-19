@@ -4,6 +4,7 @@ import Video from "./workout/Video"
 import WorkoutInfo from "./workout/WorkoutInfo"
 import ExerciseInfo from "./workout/ExerciseInfo"
 import data from "./data"
+import { APIBase } from "./data"
 
 export default function Workout(props) {
     // Сплитим строку поиска по вопросу чтобы получить параметры
