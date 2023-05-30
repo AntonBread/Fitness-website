@@ -9,4 +9,10 @@ export function secondsToString(totalSecs) {
     }
 
     return timeString;
-} 
+}
+
+export function dateTimeToString(dateTimeString) {
+    const dateTime = new Date(dateTimeString)
+    const formattedDate = dateTime.toLocaleDateString("ru")
+    return formattedDate.slice(0, 6) + formattedDate.slice(-2)
+}

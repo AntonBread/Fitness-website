@@ -2,6 +2,8 @@
 
 import { WorkoutInventory, WorkoutArea, WorkoutDifficulty } from "../Scripts/workoutFilterData"
 
+export const APIBase = "https://9a7f-2a03-d000-6500-acf9-a0f3-7c0e-ca99-9a0a.eu.ngrok.io/"
+
 const workoutdata = [{
     id: 1,
     name: "Тренировка 1",
@@ -294,6 +296,63 @@ export const recommendedLinks = [{
     previewImageSrc: "https://img.championat.com/c/1200x900/news/big/r/l/chto-takoe-vosstanovitelnye-trenirovki_1601474901346592870.jpg"
 }
 ]
+
+export const statGraphData = [{
+    dateTime: "2023-02-25",
+    weight: "80",
+    bustSize: "100",
+    waistSize: "80",
+    hipsSize: "110",
+    singleHipSize: "60"
+},
+{
+    dateTime: "2023-03-15",
+    weight: "78",
+    bustSize: "99",
+    waistSize: "78",
+    hipsSize: "105",
+    singleHipSize: "60"
+},
+{
+    dateTime: "2023-04-10",
+    weight: "72",
+    bustSize: "95",
+    waistSize: "75",
+    hipsSize: "100",
+    singleHipSize: "60"
+},
+{
+    dateTime: "2023-04-20",
+    weight: "69",
+    bustSize: "92",
+    waistSize: "72",
+    hipsSize: "96",
+    singleHipSize: "50"
+},
+{
+    dateTime: "2023-05-01",
+    weight: "64",
+    bustSize: "92",
+    waistSize: "65",
+    hipsSize: "95",
+    singleHipSize: "40"
+},
+{
+    dateTime: "2023-05-15",
+    weight: "62",
+    bustSize: "91",
+    waistSize: "62",
+    hipsSize: "92",
+    singleHipSize: "42"
+},
+{
+    dateTime: "2023-05-30",
+    weight: "60",
+    bustSize: "90",
+    waistSize: "60",
+    hipsSize: "90",
+    singleHipSize: "40"
+}]
 
 export const homeImages = [
     "https://avatars.dzeninfra.ru/get-zen_doc/1107063/pub_5d234d8ffe516300ade0caed_5d258e27cfcc8600ada5cb50/scale_1200",
