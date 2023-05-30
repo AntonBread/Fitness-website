@@ -21,7 +21,8 @@ export default function HomeSlider(props) {
                 className="home-slider-image"
                 src={image}
                 key={index}
-                alt="no"></img>
+                alt="no">
+            </img>
         )
     })
 
@@ -29,7 +30,7 @@ export default function HomeSlider(props) {
     const showRightArrow = (sliderOffset < (sliderLength - 1))
 
     const sliderOffsetStyle = {
-        transform: `translateX(-${sliderOffset * 1000}px)`
+        transform: `translateX(-${sliderOffset * 1152}px)`
     }
 
     return (
