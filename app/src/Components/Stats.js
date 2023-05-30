@@ -1,4 +1,5 @@
-import React, { useState } from "react"
+import React, { useState, useEffect } from "react"
+import { useNavigate } from "react-router-dom"
 import StatsList from "./stats/StatsList"
 import StatsAccum from "./stats/StatsAccum"
 import StatsGraph from "./stats/StatsGraph"
@@ -6,6 +7,12 @@ import { APIBase } from "./data"
 import { statGraphData } from "./data"
 
 export default function Stats(props) {
+
+    const navigate = useNavigate()
+
+    useEffect(() => {
+        if (!props.session) navigate("/")
+    })
 
     const initialStatData = {
         height: 170,

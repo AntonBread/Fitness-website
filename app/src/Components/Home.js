@@ -1,7 +1,6 @@
 import React, { useEffect } from "react";
 import HomeSlider from "./home/HomeSlider";
 import SignupButton from "./home/SignupButton";
-import { homeImages } from "./data";
 import { useNavigate } from "react-router-dom";
 
 export default function Home(props) {
@@ -12,12 +11,15 @@ export default function Home(props) {
         if (props.session) navigate("/catalog")
     })
 
+    function importAll(r) {
+        return r.keys().map(r);
+    }
+    const sliderImages = importAll(require.context('../img/home', true, /\.(png|jpe?g|svg)$/));
+
     return (
-        <div className="home-wallpaper">
             <div className="home-container">
-                <HomeSlider images={homeImages} />
+                <HomeSlider images={sliderImages} />
                 <SignupButton />
             </div>
-        </div>
     )
 }
