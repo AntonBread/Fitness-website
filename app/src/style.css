@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
-@import url("https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0");
+@import url("https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,1,0");
 
 * {
     margin: 0;
@@ -1112,4 +1112,214 @@ nav {
     letter-spacing: 0.1em;
     text-align: center;
     margin-left: 18px;
+}
+
+.stats-wallpaper {
+    width: 100%;
+    overflow: visible;
+    background-color: #D7BFDC;
+    padding-bottom: 115px;
+}
+
+.stats-container {
+    width: 1152px;
+    max-width: 1152px;
+    margin: 0 auto;
+    padding: 0 104px;
+    padding-top: 44px;
+    padding-bottom: 66px;
+    height: 100%;
+    background-color: #D7BFDC;
+}
+
+.stats-content-container {
+    display: flex;
+    flex-direction: row;
+    column-gap: 60px;
+}
+
+.stats-content-list-container {
+    max-width: 208px;
+    width: 208px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 43px;
+    font-weight: 600;
+    font-size: 1.25rem;
+    line-height: 24px;
+}
+
+.stats-content-list-item {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.stats-content-list-item input[type=number]::-webkit-outer-spin-button,
+.stats-content-list-item input[type=number]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.stats-content-list-input-value-wrapper {
+    display: flex;
+    width: 78px;
+    text-align: right;
+    justify-content: space-between;
+}
+
+.stats-content-list-value {
+    max-width: 40px;
+    border: none;
+    outline: none;
+    background: transparent;
+    font-size: inherit;
+    font-weight: inherit;
+    color: black;
+}
+
+.stats-button-edit-begin {
+    background: transparent;
+    width: 36px;
+    height: 36px;
+    border: none;
+    padding: 0;
+    outline: none;
+    cursor: pointer;
+}
+
+.stats-button-edit-begin i {
+    transform: scale(1.5);
+}
+
+.stats-button-edit-begin i:hover {
+    transform: scale(1.75);
+}
+
+.stats-button-edit-begin i:active {
+    transform: scale(1.5);
+}
+
+.stats-button-edit-end {
+    cursor: pointer;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    padding: 6px;
+    font-size: 1rem;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+}
+
+.stats-button-edit-apply {
+    background-color: #9966CB;
+}
+
+.stats-button-edit-apply:hover {
+    background-color: #754e9c;
+}
+
+.stats-button-edit-apply:active {
+    background-color: #af78e6;
+}
+
+.stats-button-edit-cancel {
+    margin-left: 20px;
+    background-color: #999;
+}
+
+.stats-button-edit-cancel:hover {
+    background-color: #777;
+}
+
+.stats-button-edit-cancel:active {
+    background-color: #bbb;
+}
+
+.stats-content-accum-container {
+    display: flex;
+    flex-direction: column;
+    row-gap: 75px;
+    width: 164px;
+    max-width: 164px;
+    text-align: center;
+    color: black;
+    margin-top: 30px;
+}
+
+.stats-accum-value {
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 48px;
+}
+
+.stats-accum-description {
+    margin-top: 72px;
+    font-size: 1.25rem;
+    line-height: 24px;
+    font-weight: 700;
+}
+
+.stats-content-graph-container {
+    display: flex;
+    flex-direction: column;
+    width: 450px;
+    row-gap: 30px;
+}
+
+.stats-content-graph-chart-wrapper {
+    width: 450px;
+    height: 450px;
+    background-color: white;
+    user-select: none;
+}
+
+.stats-content-graph-selector-container {
+    display: flex;
+    flex-direction: row;
+    column-gap: 10px;
+}
+
+.stats-graph-selector-button {
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    font-size: 1.25rem;
+    text-align: center;
+    height: 35px;
+    width: 105px;
+    user-select: none;
+}
+
+.stats-graph-selector-button input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.stats-graph-selector-button .text {
+    position: relative;
+    text-align: center;
+    line-height: 35px;
+    z-index: 1;
+}
+
+.stats-graph-selector-button .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: transparent;
+    border-radius: 15px;
+    z-index: 0;
+}
+
+.stats-graph-selector-button input:checked + .checkmark {
+    background-color: #eee;
+}
+
+.stats-graph-selector-button input:checked +.checkmark + .text {
+    font-weight: 700;
 }

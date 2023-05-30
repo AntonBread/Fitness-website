@@ -18,6 +18,7 @@ export default async function loginCheck() {
 
         if (response.ok) {
             const result = await response.json()
+            console.log(result)
             return result.exists
         }
         else {
@@ -30,6 +31,5 @@ export default async function loginCheck() {
 }
 
 function getEmailCookie() {
-    return "test@test.ru"
-    //return document.cookie.split('=')[1]
+    return document.cookie.split('=')[1]
 }
