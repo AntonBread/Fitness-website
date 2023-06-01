@@ -30,19 +30,6 @@ export default function StatsList(props) {
     return (
         <div className="stats-content-list-container">
             <div className="stats-content-list-item">
-                <div>Рост</div>
-                <div className="stats-content-list-input-value-wrapper">
-                    <input
-                        className="stats-content-list-value"
-                        type="number"
-                        name="height"
-                        value={props.statData.height}
-                        onChange={() => { return }}
-                        disabled />
-                    <label>см</label>
-                </div>
-            </div>
-            <div className="stats-content-list-item">
                 <div>Вес</div>
                 <div className="stats-content-list-input-value-wrapper">
                     <input

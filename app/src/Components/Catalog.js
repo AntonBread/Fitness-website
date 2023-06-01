@@ -1,13 +1,25 @@
 import React from "react"
-import { useState } from "react"
+import { useState, useEffect } from "react"
 import SearchBar from "./catalog/SearchBar"
 import CatalogTitle from "./catalog/CatalogTitle"
 import SearchFilters from "./catalog/SearchFilters"
 import CatalogContent from "./catalog/CatalogContent"
 import { durationThresholds } from "./catalog/DurationFilterBox"
-import data from "./data"
+import { APIBase } from "./data"
+//import data from "./data"
 
 export default function Catalog() {
+    const [data, setData] = useState(null)
+
+    useEffect(() => {
+        async function executeRequest() {
+            const result = await requestTrainingData()
+            setData(result)
+        }
+        executeRequest()
+    }, [])
+
+
     // Состояние строки поиска
     const [searchQuery, setSearchQuery] = useState("")
     // Фиксируем состояние в компоненте SearchBar
@@ -43,11 +55,11 @@ export default function Catalog() {
                         filterData={filterData}
                         handleFilterChange={handleFilterChange}
                     />
-                    <CatalogContent
+                    {data && <CatalogContent
                         data={data}
                         searchQuery={searchQuery}
                         filterData={filterData}
-                    />
+                    />}
                 </div>
             </div>
         </div>
@@ -66,4 +78,26 @@ function updateFilterState(callback, index, name) {
 function updateThresholdSelectionArray(previous, index) {
     previous[index] = !previous[index]
     return previous
+}
+
+async function requestTrainingData() {
+    const url = `${APIBase}/training/`
+    try {
+        const response = await fetch(url, {
+            method: "GET",
+        })
+
+        if (response.ok) {
+            const result = await response.json()
+            return result
+        }
+        else {
+            console.log("Training data request failed")
+            return null
+        }
+    }
+    catch (error) {
+        console.error('Error:', error);
+        return null
+    }
 }

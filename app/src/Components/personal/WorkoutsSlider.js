@@ -21,10 +21,13 @@ export default function WorkoutSlider(props) {
             <WorkoutCard
                 key={workout.id}
                 id={workout.id}
-                duration={workout.duration}
-                previewSrc={workout.previewImageSrc}
-                name={workout.name}
-                difficulty={workout.difficulty}
+                name={workout.NameOfTraining}
+                previewSrc={workout.Img}
+                duration={workout.TimeMovies}
+                difficulty={workout.Difficulty}
+                video={workout.LinkVideo}
+                inventory={workout.Inventory}
+                area={workout.StudyArea}
             />
         )
     })

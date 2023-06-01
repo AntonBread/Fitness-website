@@ -34,7 +34,7 @@ a:active {
 }
 
 nav {
-    min-width: 1152px;
+    width: 1152px;
     max-width: 1152px;
     display: flex;
     align-items: center;
@@ -64,7 +64,7 @@ nav {
     bottom: 0;
     left: 0;
     right: 0;
-    overflow: hidden;
+    overflow: visible;
     z-index: -1;
     background-image: linear-gradient(#B999CB, #9B76BC, #9B76BC);
 }
@@ -73,7 +73,7 @@ nav {
     display: flex;
     flex-direction: column;
     align-items: center;
-    max-width: 100%;
+    min-width: 1280px;
     margin: 0 auto;
     padding: 0 104px;
     padding-bottom: 64px;
@@ -98,11 +98,11 @@ nav {
 }
 
 .home-slider-button-left {
-    left: 16px;
+    left: 25px;
 }
 
 .home-slider-button-right {
-    right: 16px;
+    right: 25px;
 }
 
 .home-slider-wrapper {
@@ -232,6 +232,31 @@ nav {
     margin-left: 82px;
     font-size: 1.25rem;
     line-height: 25px;
+}
+
+.workout-btn-done {
+    width: 400px;
+    height: 60px;
+    font-size: 1.5rem;
+    line-height: 60px;
+    font-weight: 600;
+    background-color: #D7BFDC;
+    border: none;
+    outline: none;
+    border-radius: 30px;
+    margin-top: 20px;
+}
+
+.workout-btn-done:hover {
+    background-color: #cab3cd;
+}
+
+.workout-btn-done:active {
+    background-color: #e9ceee;
+}
+
+.workout-btn-done:disabled {
+    background-color: #777;
 }
 
 .searchbar-container {
@@ -1127,7 +1152,7 @@ nav {
     margin: 0 auto;
     padding: 0 104px;
     padding-top: 44px;
-    padding-bottom: 66px;
+    padding-bottom: 120px;
     height: 100%;
     background-color: #D7BFDC;
 }

@@ -11,8 +11,8 @@ export default function StatsGraphSelector(props) {
                 <input
                     type="radio"
                     name="chartSelection"
-                    value="weight"
-                    checked={props.chartSelection === 'weight'}
+                    value="Weight"
+                    checked={props.chartSelection === 'Weight'}
                     onChange={onChartSelectionChanged}
                 />
                 <span className="checkmark"></span>
@@ -22,8 +22,8 @@ export default function StatsGraphSelector(props) {
                 <input
                     type="radio"
                     name="chartSelection"
-                    value="bustSize"
-                    checked={props.chartSelection === 'bustSize'}
+                    value="Breast"
+                    checked={props.chartSelection === 'Breast'}
                     onChange={onChartSelectionChanged}
                 />
                 <span className="checkmark"></span>
@@ -33,8 +33,8 @@ export default function StatsGraphSelector(props) {
                 <input
                     type="radio"
                     name="chartSelection"
-                    value="waistSize"
-                    checked={props.chartSelection === 'waistSize'}
+                    value="Waist"
+                    checked={props.chartSelection === 'Waist'}
                     onChange={onChartSelectionChanged}
                 />
                 <span className="checkmark"></span>
@@ -44,8 +44,8 @@ export default function StatsGraphSelector(props) {
                 <input
                     type="radio"
                     name="chartSelection"
-                    value="hipsSize"
-                    checked={props.chartSelection === 'hipsSize'}
+                    value="Hips"
+                    checked={props.chartSelection === 'Hips'}
                     onChange={onChartSelectionChanged}
                 />
                 <span className="checkmark"></span>

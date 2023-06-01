@@ -7,10 +7,10 @@ export const durationThresholds = [{
 },
 {
     lower: 7,
-    upper: 10,
+    upper: 9,
 },
 {
-    lower: 11,
+    lower: 10,
     upper: -1
 }
 ]

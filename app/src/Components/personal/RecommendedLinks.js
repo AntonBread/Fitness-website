@@ -6,10 +6,10 @@ export default function RecommendedLinks(props) {
         return (
             <LinkCard
                 key={link.id}
-                href={link.href}
-                previewSrc={link.previewImageSrc}
-                title={link.name}
-                description={link.description}
+                href={link.Href}
+                previewSrc={link.Img}
+                title={link.Name}
+                description={link.Description}
             />
         )
     })
