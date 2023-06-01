@@ -11,10 +11,10 @@ export default function Home(props) {
         if (props.session) navigate("/catalog")
     })
 
-    function importAll(r) {
-        return r.keys().map(r);
-    }
-    const sliderImages = importAll(require.context('../img/home', true, /\.(png|jpe?g|svg)$/));
+    const image1 = process.env.PUBLIC_URL + 'home/1.jpg'
+    const image2 = process.env.PUBLIC_URL + 'home/2.jpg'
+    const image3 = process.env.PUBLIC_URL + 'home/3.jpg'
+    const sliderImages = [image1, image2, image3]
 
     return (
             <div className="home-container">

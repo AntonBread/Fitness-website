@@ -5,8 +5,6 @@ import { dateTimeToString } from "../../Scripts/converters";
 
 export default function StatsGraph(props) {
 
-    console.log(props.data)
-
     const [chartSelection, setChartSelection] = useState("Weight")
 
     var data = props.data

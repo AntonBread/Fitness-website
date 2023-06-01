@@ -24,8 +24,6 @@ export default function Stats(props) {
 
     const [statRequestData, setStatRequestData] = useState(null)
 
-    console.log(statRequestData)
-
     const [initialStatData, setInitialStatData] = useState(null)
 
     const [statData, setStatData] = useState(null)

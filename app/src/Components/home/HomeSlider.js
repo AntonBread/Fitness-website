@@ -19,7 +19,7 @@ export default function HomeSlider(props) {
         return (
             <img
                 className="home-slider-image"
-                src={image}
+                src={process.env.PUBLIC_URL + `/home/${index + 1}.jpg`}
                 key={index}
                 alt="no">
             </img>

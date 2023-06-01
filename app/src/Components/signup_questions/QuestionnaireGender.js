@@ -1,7 +1,8 @@
 import React from "react";
-import image from "../../img/questionnaire/9.png"
 
 export default function QuestionnaireGender(props) {
+
+    const image = process.env.PUBLIC_URL + `/questionnaire/9.png`
 
     const titleMarginsStyle = {
         marginTop: "36px",

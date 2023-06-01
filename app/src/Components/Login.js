@@ -38,14 +38,15 @@ export default function Login(props) {
         try {
             const response = await fetch(url, {
                 method: "POST",
-                body: parcel
+                body: parcel,
+                credentials: 'same-origin',
             })
 
             if (response.ok) {
                 const result = await response.json()
                 console.log(result)
                 if (!result.valid) return
-                document.cookie = `session_token=${formData.email}`
+                document.cookie = `session_token=${formData.email};expires=Thu, 01 Jan 2024 00:00:01 GMT`
                 props.setSession(result.valid)
                 navigate("/catalog")
             }
