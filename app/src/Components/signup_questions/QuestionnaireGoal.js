@@ -1,7 +1,8 @@
 import React from "react";
-import image from "../../img/questionnaire/1.png"
 
 export default function QuestionnaireGoal(props) {
+
+    const image = process.env.PUBLIC_URL + `/questionnaire/1.png`
 
     function onGoalSelect(event) {
         props.setAreInputsEmpty(false)

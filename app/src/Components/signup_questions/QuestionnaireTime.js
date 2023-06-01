@@ -1,7 +1,8 @@
 import React from "react";
-import image from "../../img/questionnaire/2.png"
 
 export default function QuestionnaireTime(props) {
+
+    const image = process.env.PUBLIC_URL + `/questionnaire/2.png`
 
     function onInputChange(event) {
         props.setAreInputsEmpty(event.target.value.length === 0)

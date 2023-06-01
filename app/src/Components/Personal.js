@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import RecommendedWorkouts from "./personal/RecommendedWorkouts";
 import RecommendedLinks from "./personal/RecommendedLinks";
-import { recommendedLinks } from "./data";
 import { useNavigate } from "react-router-dom";
 import { APIBase } from "./data";
 
