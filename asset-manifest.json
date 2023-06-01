@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/Fitness-website/static/css/main.09a1aca4.css",
-    "main.js": "/Fitness-website/static/js/main.d26da1bb.js",
-    "static/media/arrow-left-circle.svg": "/Fitness-website/static/media/arrow-left-circle.5ea254ab587979ce9b9de54483abdda1.svg",
-    "static/media/arrow-right-circle.svg": "/Fitness-website/static/media/arrow-right-circle.c2804c3572fd37e3e700e2044322800e.svg",
-    "index.html": "/Fitness-website/index.html",
-    "main.09a1aca4.css.map": "/Fitness-website/static/css/main.09a1aca4.css.map",
-    "main.d26da1bb.js.map": "/Fitness-website/static/js/main.d26da1bb.js.map"
+    "main.css": "/static/css/main.09a1aca4.css",
+    "main.js": "/static/js/main.04f6941a.js",
+    "static/media/arrow-left-circle.svg": "/static/media/arrow-left-circle.5ea254ab587979ce9b9de54483abdda1.svg",
+    "static/media/arrow-right-circle.svg": "/static/media/arrow-right-circle.c2804c3572fd37e3e700e2044322800e.svg",
+    "index.html": "/index.html",
+    "main.09a1aca4.css.map": "/static/css/main.09a1aca4.css.map",
+    "main.04f6941a.js.map": "/static/js/main.04f6941a.js.map"
   },
   "entrypoints": [
     "static/css/main.09a1aca4.css",
-    "static/js/main.d26da1bb.js"
+    "static/js/main.04f6941a.js"
   ]
 }
