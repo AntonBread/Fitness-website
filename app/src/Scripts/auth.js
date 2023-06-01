@@ -30,6 +30,6 @@ export default async function loginCheck() {
     }
 }
 
-function getEmailCookie() {
+export function getEmailCookie() {
     return document.cookie.split('=')[1]
 }

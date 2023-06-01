@@ -9,7 +9,7 @@ export default function WorkoutCard(props) {
 
     return (
         <div>
-            <Link to={`/workout?id=${props.id}`} className="catalog-card-container">
+            <Link to={`/workout?id=${props.id}`} className="catalog-card-container" state={props}>
                 <img className="catalog-card-image" src={props.previewSrc} alt="no"></img>
                 <div className="catalog-card-description">
                     <h2 className="catalog-card-description-title">{props.name}</h2>

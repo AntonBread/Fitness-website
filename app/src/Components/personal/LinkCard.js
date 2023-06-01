@@ -1,6 +1,7 @@
 import React from "react";
 
 export default function LinkCard(props) {
+    console.log(props)
     return (
         <div>
             <a href={props.href}>

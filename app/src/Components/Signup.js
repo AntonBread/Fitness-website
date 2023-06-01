@@ -103,7 +103,7 @@ export default function Signup(props) {
             ...questionnaireData
         }
         const userUrl = `${APIBase}/user/`
-        const statUrl = `${APIBase}/statistics/`
+        const statUrl = `${APIBase}/statinsert/`
         const userData = createSignupUserPackage(parcel)
         const statData = createSignupStatisticsPackage(parcel)
 

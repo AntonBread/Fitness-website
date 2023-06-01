@@ -6,7 +6,7 @@ import * as workoutFilterData from "../../Scripts/workoutFilterData";
 export default function CatalogContent(props) {
     const workouts = props.data.map(workout => {
         // Рендерим только тренировки подходящие под запрос поисковой строки
-        if (!(matchesSearchQuery(props.searchQuery, workout.name))) {
+        if (!(matchesSearchQuery(props.searchQuery, workout.NameOfTraining))) {
             return null
         }
         // Проверяем соответствие установленным фильтрам
@@ -18,10 +18,13 @@ export default function CatalogContent(props) {
             <WorkoutCard
                 key={workout.id}
                 id={workout.id}
-                name={workout.name}
-                previewSrc={workout.previewImageSrc}
-                duration={workout.duration}
-                difficulty={workout.difficulty}
+                name={workout.NameOfTraining}
+                previewSrc={workout.Img}
+                duration={workout.TimeMovies}
+                difficulty={workout.Difficulty}
+                video={workout.LinkVideo}
+                inventory={workout.Inventory}
+                area={workout.StudyArea}
             />
         )
     })
@@ -50,10 +53,10 @@ function matchesSearchQuery(query, name) {
 }
 
 function matchesFilter(filterData, workoutData) {
-    const durationCheck = filterDurationMatch(filterData.durationThresholdsSelection, workoutData.duration)
-    const inventoryCheck = filterGeneralMatch(filterData.inventorySelection, workoutData.inventory, workoutFilterData.InventoryFilterData.checks)
-    const areaCheck = filterGeneralMatch(filterData.areaSelection, workoutData.area, workoutFilterData.AreaFilterData.checks)
-    const difficultyCheck = filterGeneralMatch(filterData.difficultySelection, workoutData.difficulty, workoutFilterData.DifficultyFilterData.checks)
+    const durationCheck = filterDurationMatch(filterData.durationThresholdsSelection, workoutData.TimeMovies)
+    const inventoryCheck = filterGeneralMatch(filterData.inventorySelection, workoutData.Inventory, workoutFilterData.InventoryFilterData.checks)
+    const areaCheck = filterGeneralMatch(filterData.areaSelection, workoutData.StudyArea, workoutFilterData.AreaFilterData.checks)
+    const difficultyCheck = filterGeneralMatch(filterData.difficultySelection, workoutData.Difficulty, workoutFilterData.DifficultyFilterData.checks)
     return (durationCheck && inventoryCheck && areaCheck && difficultyCheck)
 }
 

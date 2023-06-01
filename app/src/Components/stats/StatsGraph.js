@@ -5,7 +5,9 @@ import { dateTimeToString } from "../../Scripts/converters";
 
 export default function StatsGraph(props) {
 
-    const [chartSelection, setChartSelection] = useState("weight")
+    console.log(props.data)
+
+    const [chartSelection, setChartSelection] = useState("Weight")
 
     var data = props.data
     if (data.length > 7) {
@@ -17,13 +19,13 @@ export default function StatsGraph(props) {
     const chartData = data.map(item => {
         chartMaxValueY = Math.max(chartMaxValueY, item[chartSelection])
         return {
-            date: dateTimeToString(item.dateTime),
+            date: dateTimeToString(item["Time"]),
             value: item[chartSelection]
         }
     })
 
     const chartLabelY = {position: "insideTopLeft", dy: -30, dx: 15}
-    chartLabelY.value = chartSelection === "weight" ? "кг" : "см"
+    chartLabelY.value = chartSelection === "Weight" ? "кг" : "см"
 
     const barChart = (
         <BarChart width={450} height={450} data={chartData} barCategoryGap={15} margin={{ top: 30, right: 10, bottom: 10, left: 10 }}>

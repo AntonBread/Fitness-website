@@ -5,15 +5,15 @@ export const WorkoutDifficulty = Object.freeze({
 })
 
 export const WorkoutInventory = Object.freeze({
-    NONE: "N",
-    BASIC: "B",
-    GYM: "G"
+    NONE: "0",
+    BASIC: "1",
+    GYM: "2"
 })
 
 export const WorkoutArea = Object.freeze({
     ARMS: "TOP",
     CORE: "MED",
-    LEGS: "BOT"
+    LEGS: "BOT",
 })
 
 export const InventoryFilterData = {
